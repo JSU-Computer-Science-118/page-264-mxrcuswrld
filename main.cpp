@@ -11,7 +11,7 @@ int main()
 	int chose{};
   cin>>chose;
 
-  if (chose<1 || chose>1000)
+  if (chose<=0 || chose>1000)
   {cout<<"out of bound\n";
     return 0;
     
