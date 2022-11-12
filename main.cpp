@@ -8,12 +8,19 @@ int main()
 {
 	const int primes[] {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31};
 
-	int chose {};
+	int chose{};
+  cin>>chose;
 
-	while (chose < 1 || chose > 1000) {
-		
-		cin >> chose;
+  if (chose<1 || chose>1000)
+  {cout<<"out of bound\n";
+    return 0;
+    
+  }
+  if (chose < 1 || chose > 1000) {
+    cin >> chose;
 	}
+
+  
 	bool isp {true};
 
 	for (const int p : primes)
